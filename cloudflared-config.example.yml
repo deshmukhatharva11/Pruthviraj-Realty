@@ -20,3 +20,4 @@ ingress:
 
   # Catch-all rule (required by cloudflared)
   - service: http_status:404
+
