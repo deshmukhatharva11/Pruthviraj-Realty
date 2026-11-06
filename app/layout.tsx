@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: process.env.NEXTAUTH_URL || "https://pruthvirajrealty.com",
+    canonical: process.env.NEXTAUTH_URL || "https://pruthvirajrealty.in",
   },
 }
 

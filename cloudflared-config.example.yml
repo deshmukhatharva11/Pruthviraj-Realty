@@ -1,0 +1,22 @@
+# Cloudflare Tunnel Configuration Example (`config.yml`)
+# Place this at: ~/.cloudflared/config.yml (or /etc/cloudflared/config.yml)
+# Replace <YOUR_TUNNEL_ID> with your Cloudflare Tunnel UUID
+
+tunnel: <YOUR_TUNNEL_ID>
+credentials-file: /root/.cloudflared/<YOUR_TUNNEL_ID>.json
+
+ingress:
+  # Root domain
+  - hostname: pruthvirajrealty.in
+    service: http://127.0.0.1:3002
+    originRequest:
+      httpHostHeader: pruthvirajrealty.in
+
+  # WWW subdomain
+  - hostname: www.pruthvirajrealty.in
+    service: http://127.0.0.1:3002
+    originRequest:
+      httpHostHeader: www.pruthvirajrealty.in
+
+  # Catch-all rule (required by cloudflared)
+  - service: http_status:404

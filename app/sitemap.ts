@@ -2,7 +2,7 @@ import { MetadataRoute } from "next"
 import { properties } from "@/data/properties"
 import { propertyCategories } from "@/data/properties"
 
-const BASE_URL = process.env.NEXTAUTH_URL || "https://pruthvirajrealty.com"
+const BASE_URL = process.env.NEXTAUTH_URL || "https://pruthvirajrealty.in"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()

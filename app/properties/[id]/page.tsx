@@ -63,7 +63,7 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
             "@type": "RealEstateListing",
             "name": property.title,
             "description": property.description,
-            "url": `https://pruthvirajrealty.com/properties/${property.id}`,
+            "url": `https://pruthvirajrealty.in/properties/${property.id}`,
             "image": property.image ? [property.image] : [],
             "offers": {
               "@type": "Offer",
